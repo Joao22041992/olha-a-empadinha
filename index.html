@@ -98,7 +98,20 @@
 
         /* Responsividade */
         @media (max-width: 768px) {
-            .carousel-item { height: 50vh; }
+            :root {
+                font-size: 100%; /* Fonte ajustada para mobile */
+            }
+            .carousel-item { 
+                height: 60vh; /* Altura otimizada para celular */
+            }
+            .carousel-caption {
+                bottom: 20px;
+                padding: 15px;
+                background: rgba(0, 0, 0, 0.6); /* Fundo um pouco mais escuro para leitura */
+            }
+            .carousel-caption h2 {
+                font-size: 1.5rem; /* Título menor no celular */
+            }
         }
     </style>
 </head>
@@ -132,35 +145,35 @@
     <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" style="background-image: url('empada com catupiri.jpg')">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <h2>Empadinhas Gourmet</h2>
                     <p>O sabor tradicional que você já conhece.</p>
                     <a href="index1.html" class="btn btn-custom mt-3">Peça já</a>
                 </div>
             </div>
             <div class="carousel-item" style="background-image: url('empada de chocolate.png')">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <h2>Novos Sabores</h2>
                     <p>Experimente nossas opções doces e salgadas.</p>
                     <a href="#produtos" class="btn btn-custom mt-3">Peça já</a>
                 </div>
             </div>
             <div class="carousel-item" style="background-image: url('empada de palmito.jpg')">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <h2>Ingredientes Selecionados</h2>
                     <p>Qualidade em cada mordida.</p>
                     <a href="#produtos" class="btn btn-custom mt-3">Peça já</a>
                 </div>
             </div>
             <div class="carousel-item" style="background-image: url('empada_carne_seca.webp')">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <h2>Feito com Amor</h2>
                     <p>Produção artesanal diária.</p>
                     <a href="#produtos" class="btn btn-custom mt-3">Peça já</a>
                 </div>
             </div>
             <div class="carousel-item" style="background-image: url('Empada-de-Queijo.png')">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <h2>Peça agora</h2>
                     <p>Entrega rápida em toda a região.</p>
                     <a href="#produtos" class="btn btn-custom mt-3">Peça já</a>
